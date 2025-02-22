@@ -25,7 +25,7 @@ function App() {
         p={8}
         flexWrap="wrap"
         id="inicio"
-        direction={{ base: "column-reverse", md: "row" }} // Alterado aqui
+        direction={{ base: "column-reverse", md: "row" }}
       >
         <Image
           src={perfil}
@@ -38,7 +38,7 @@ function App() {
           boxShadow="lg"
         />
         <Box
-          maxW={{ base: "100%", md: "700px" }} // Reduz a largura no mobile
+          maxW={{ base: "100%", md: "700px" }}
           ml={{ base: 0, md: 10 }}
           mt={{ base: 6, md: 0 }}
           textAlign={{ base: "center", md: "left" }}
