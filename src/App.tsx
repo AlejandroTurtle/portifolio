@@ -25,29 +25,44 @@ function App() {
         p={8}
         flexWrap="wrap"
         id="inicio"
+        direction={{ base: "column-reverse", md: "row" }} // Alterado aqui
       >
         <Image
           src={perfil}
           alt="Perfil"
           borderRadius="3xl"
-          width={{ base: 300, md: 400, lg: 500 }}
+          width={{ base: "80%", md: "40%", lg: "30%" }}
           p="4"
           borderWidth={2}
           borderColor="blackAlpha.900"
           boxShadow="lg"
         />
-        <Box maxW="600px" ml={{ base: 0, md: 10 }} mt={{ base: 6, md: 0 }}>
-          <Text fontSize="3xl" fontWeight="bold" color="white">
+        <Box
+          maxW={{ base: "100%", md: "700px" }} // Reduz a largura no mobile
+          ml={{ base: 0, md: 10 }}
+          mt={{ base: 6, md: 0 }}
+          textAlign={{ base: "center", md: "left" }}
+        >
+          <Text
+            fontSize={{ base: "2xl", md: "3xl" }}
+            fontWeight="bold"
+            color="white"
+          >
             Olá! <br /> Meu nome é Alejandro
           </Text>
-          <Text fontSize="3xl" mt="4" color="white">
+          <Text fontSize={{ base: "2xl", md: "3xl" }} mt="4" color="white">
             <Typical
               steps={["Sou desenvolvedor Mobile", 50000, "", 1000]}
               loop={Infinity}
               wrapper="span"
             />
           </Text>
-          <Text fontSize="xl" mt="4" color="white" lineHeight="1.6">
+          <Text
+            fontSize={{ base: "lg", md: "xl" }}
+            mt="4"
+            color="white"
+            lineHeight="1.6"
+          >
             Olá! Sou <strong>Alejandro</strong>, desenvolvedor mobile com
             experiência em <strong>React Native</strong>, criando aplicações
             robustas e funcionais.

@@ -97,15 +97,24 @@ function ProjectsCarousel() {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <Flex align="center" justify="center" p={5}>
+              <Flex
+                align="center"
+                justify="center"
+                p={5}
+                flexDirection={{ base: "column", md: "row" }}
+              >
                 <Image
                   src={project.img}
                   alt={project.title}
                   borderRadius="md"
-                  boxSize="300px"
+                  boxSize={{ base: "200px", md: "300px" }}
                   objectFit="contain"
                 />
-                <Box ml={6} textAlign="left">
+                <Box
+                  ml={{ base: 0, md: 6 }}
+                  mt={{ base: 4, md: 0 }}
+                  textAlign={{ base: "center", md: "left" }}
+                >
                   <Heading fontSize="2xl">{project.title}</Heading>
                   <Text
                     mt={2}
@@ -122,7 +131,7 @@ function ProjectsCarousel() {
                     href={project.link}
                     target="_blank"
                   >
-                    Demo
+                    Vizualizar
                   </Button>
                 </Box>
               </Flex>

@@ -12,36 +12,37 @@ function Header() {
       top="0"
       zIndex="1000"
       boxShadow="md"
+      flexWrap="wrap"
     >
       <Text
         as={"h1"}
         fontWeight={"bold"}
         fontFamily={"monospace"}
-        fontSize={"xl"}
+        fontSize={{ base: "lg", md: "xl" }}
       >
         Alejandro Dev
       </Text>
-      <Box display="flex" gap="20px" alignItems="center">
+      <Box display="flex" gap="20px" alignItems="center" flexWrap="wrap">
         <ScrollLink to="inicio" smooth={true} duration={500}>
-          <Link>
+          <Box as="span" cursor="pointer">
             <Heading as="h1" size="md" fontFamily={"monospace"}>
               Ínicio
             </Heading>
-          </Link>
+          </Box>
         </ScrollLink>
         <ScrollLink to="projetos" smooth={true} duration={500}>
-          <Link>
+          <Box as="span" cursor="pointer">
             <Heading as="h1" size="md" fontFamily={"monospace"}>
               Projetos
             </Heading>
-          </Link>
+          </Box>
         </ScrollLink>
         <ScrollLink to="contato" smooth={true} duration={500}>
-          <Link>
+          <Box as="span" cursor="pointer">
             <Heading as="h1" size="md" fontFamily={"monospace"}>
               Contato
             </Heading>
-          </Link>
+          </Box>
         </ScrollLink>
         <Link href="https://github.com/AlejandroTurtle" isExternal>
           <IconButton
