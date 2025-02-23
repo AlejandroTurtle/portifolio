@@ -83,9 +83,22 @@ function App() {
             mt={4}
             colorScheme="blue"
             size="lg"
-            onClick={() => window.open("/CurriculoAlejandro.pdf", "_blank")}
+            onClick={() =>
+              window.open("/CurrículoAlejandroGomes.pdf", "_blank")
+            }
           >
-            Baixar Currículo
+            Baixar Currículo Português
+          </Button>
+          <Button
+            mt={4}
+            ml={4}
+            colorScheme="blue"
+            size="lg"
+            onClick={() =>
+              window.open("/CurrículoAlejandroGomesInglês.pdf", "_blank")
+            }
+          >
+            Baixar Currículo Inglês
           </Button>
         </Box>
       </Flex>
