@@ -24,7 +24,7 @@ function App() {
         h="100vh"
         p={8}
         flexWrap="wrap"
-        id="inicio"
+        id="Inócio"
         direction={{ base: "column-reverse", md: "row" }}
       >
         <Image
