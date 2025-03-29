@@ -26,7 +26,7 @@ function Header() {
         <ScrollLink to="inicio" smooth={true} duration={500}>
           <Box as="span" cursor="pointer">
             <Heading as="h1" size="md" fontFamily={"monospace"}>
-              Ínicio
+              Início
             </Heading>
           </Box>
         </ScrollLink>
